@@ -8,6 +8,7 @@ import * as customRenderers from "../../custom/renderers";
 
 const getRenderer = field => {
   const { value, name } = field;
+
   const customRendererName = name.replace(/\s/g, "");
   if (customRenderers[customRendererName]) {
     const Component = customRenderers[customRendererName];
