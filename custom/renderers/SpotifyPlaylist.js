@@ -12,7 +12,6 @@ const SpotifyPlaylist = ({ value }) => {
   const src = `https://open.spotify.com/embed/${resourceType}/${resourceId}`;
   return (
     <div>
-      <h2>RRR Soundtrack</h2>
       <iframe
         className="SpotifyPlaylist"
         title="Spotify Playlist"

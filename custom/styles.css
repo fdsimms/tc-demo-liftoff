@@ -6,6 +6,11 @@ h2 {
   font-size: 20px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .field-name {
   display: none;
   visibility: hidden;
@@ -56,4 +61,31 @@ h2 {
 
 .TheRRReview {
   margin-bottom: 25px;
+}
+
+.LedeImage {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.PhotoCredit {
+  font-style: italic;
+  margin-bottom: 35px;
+}
+
+.RRRSoundtrack {
+  margin-top: 15px;
+  max-width: 60%;
+  margin-bottom: 15px;
+}
+
+.RRRSoundtrack .field-name {
+  display: block;
+  visibility: visible;
+}
+
+.SpotifyPlaylist {
+  margin-bottom: 35px;
 }
