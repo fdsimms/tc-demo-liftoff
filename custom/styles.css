@@ -1,19 +1,7 @@
-body {
-  font-family: sans-serif;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.field-name {
-  display: none;
-  visibility: hidden;
+.row-link,
+.header-link {
+  text-decoration: none;
+  color: black;
 }
 
 .header + .nav-button {
@@ -21,71 +9,98 @@ ul {
   visibility: hidden;
 }
 
-.GoogleMap {
-  width: 100%;
-  margin-bottom: 25px;
+img {
+  max-width: 100%;
 }
 
-.SpotifyPlaylist {
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.Name,
-.Rating {
-  font-size: 24px;
-  display: inline;
+body {
+  max-width: 800px;
+  margin: auto;
 }
 
-.Rating h2 {
+.field-name {
+  display: none;
+  display: none;
+  visibility: hidden;
+  visibility: hidden;
+}
+
+.Category {
+  color: #13b49d;
+  text-decoration: none;
+  font-family: Flama Condensed, Roboto Condensed, Trebuchet MS, Lucida Grande,
+    Tahoma, sans-serif;
+  font-weight: 500;
   display: inline-block;
-  margin-bottom: 25px;
-  margin-right: 10px;
+  font-size: 1.1875rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .Name {
-  margin-right: 10px;
+  font-family: Flama Condensed, Roboto Condensed, Trebuchet MS, Lucida Grande,
+    Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.Dek {
+  color: #75757d;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  line-height: 1.6;
+  margin: 0.9rem 0 1rem;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .Author {
-  font-size: 16px;
-  font-style: italic;
+  color: #13b49d;
+  text-decoration: none;
+  font-size: 1.0625rem;
 }
 
-.Author::before {
-  content: "an investigation by ";
+.Body {
+  font-size: 1.0625rem;
+  line-height: 1.88;
+  margin: 0;
 }
 
-.TheRRReview .field-name {
-  display: block;
-  visibility: visible;
+.nav-button {
+  font-family: Flama Condensed, Roboto Condensed, Trebuchet MS, Lucida Grande,
+    Tahoma, sans-serif;
+  font-weight: 500;
+  border: 1px solid #a66eff;
+  border-radius: 2px;
+  color: black;
+  height: 2.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
 }
 
-.TheRRReview {
-  margin-bottom: 25px;
+.index-page .Name {
+  font-size: 2.5rem;
 }
 
-.LedeImage {
-  width: 100%;
-  max-width: 500px;
-  margin-top: 15px;
-  margin-bottom: 5px;
+.index-page .Dek {
+  font-size: 1.5rem;
 }
 
-.PhotoCredit {
-  font-style: italic;
-  margin-bottom: 35px;
-}
-
-.RRRSoundtrack {
-  margin-top: 15px;
-  max-width: 60%;
-  margin-bottom: 15px;
-}
-
-.RRRSoundtrack .field-name {
-  display: block;
-  visibility: visible;
-}
-
-.SpotifyPlaylist {
-  margin-bottom: 35px;
+.row {
+  margin-bottom: 40px;
 }
