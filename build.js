@@ -3,15 +3,22 @@
 import formatAirtableRowData from "./src/utils/formatAirtableRowData";
 
 require("dotenv").config();
+
 const React = require("react");
 const fs = require("fs");
 const Airtable = require("airtable");
 const https = require("https");
 
+const trimFieldOrder = require("./src/utils/trimFieldOrder");
 const Index = require("./src/components/Index").default;
 const RowPage = require("./src/components/RowPage").default;
 const tableHasPublishedColumn = require("./src/utils/tableHasPublishedColumn")
   .default;
+
+process.env.FIELD_ORDER = trimFieldOrder(process.env.FIELD_ORDER);
+process.env.HOMEPAGE_FIELD_ORDER = trimFieldOrder(
+  process.env.HOMEPAGE_FIELD_ORDER
+);
 
 const renderAsHTMLPage = require(`./src/utils/renderAsHTMLPage`).default;
 
@@ -90,7 +97,7 @@ tableHasPublishedColumn(base, includePublished =>
           const filepath = `dist/${slug}.html`;
           allRows[currentPage].push(formattedRow);
           recordsOnCurrentPage += 1;
-          if (recordsOnCurrentPage >= 10) {
+          if (recordsOnCurrentPage >= 5) {
             recordsOnCurrentPage = 0;
             currentPage += 1;
           }
